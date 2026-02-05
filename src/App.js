@@ -78,9 +78,7 @@ export default function HoneyWebsite() {
     }
   };
 
-  React.useEffect(() => {
-    // Initial load logic here if needed
-  }, []);
+
 
   const handleAddToCart = (product) => {
     const selectedSize = selectedSizes[product.id];
