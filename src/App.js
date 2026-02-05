@@ -1,13 +1,48 @@
 import React, { useState } from 'react';
 import { ShoppingCart, Search, User, Menu, ChevronLeft, ChevronRight } from 'lucide-react';
 
+const products = [
+  {
+    id: 1,
+    name: "Zfir Royal",
+    image: "/zfir_royal.jpg",
+    price: 54.00,
+    sizes: ["220g", "360g", "750g"],
+    defaultSize: "360g"
+  },
+  {
+    id: 2,
+    name: "Chocolat Noir au Miel",
+    image: "https://images.unsplash.com/photo-1542843137-8791a6904d14?w=400&h=400&fit=crop",
+    price: 22.00,
+    sizes: ["250g", "350g"],
+    defaultSize: "250g"
+  },
+  {
+    id: 3,
+    name: "Miel Sauvage",
+    image: "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=400&h=400&fit=crop",
+    price: 212.00,
+    sizes: ["800g", "1200g"],
+    defaultSize: "800g"
+  },
+  {
+    id: 4,
+    name: "Miel de Fleurs",
+    image: "/miel_fleurs.jpg",
+    price: 45.00,
+    sizes: ["250g", "500g", "1000g"],
+    defaultSize: "500g"
+  }
+];
+
 export default function HoneyWebsite() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
-  const [filteredProducts, setFilteredProducts] = useState([]);
+  const [filteredProducts, setFilteredProducts] = useState(products);
   const [cartItems, setCartItems] = useState([]);
   const [isCartOpen, setIsCartOpen] = useState(false);
-  const [checkoutStep, setCheckoutStep] = useState('cart'); // 'cart' or 'form'
+  const [checkoutStep, setCheckoutStep] = useState('cart');
   const [customerInfo, setCustomerInfo] = useState({
     fullName: "",
     phone: "",
@@ -15,41 +50,6 @@ export default function HoneyWebsite() {
     address: "",
     notes: ""
   });
-
-  const products = [
-    {
-      id: 1,
-      name: "Zfir Royal",
-      image: "/zfir_royal.jpg",
-      price: 54.00,
-      sizes: ["220g", "360g", "750g"],
-      defaultSize: "360g"
-    },
-    {
-      id: 2,
-      name: "Chocolat Noir au Miel",
-      image: "https://images.unsplash.com/photo-1542843137-8791a6904d14?w=400&h=400&fit=crop",
-      price: 22.00,
-      sizes: ["250g", "350g"],
-      defaultSize: "250g"
-    },
-    {
-      id: 3,
-      name: "Miel Sauvage",
-      image: "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=400&h=400&fit=crop",
-      price: 212.00,
-      sizes: ["800g", "1200g"],
-      defaultSize: "800g"
-    },
-    {
-      id: 4,
-      name: "Miel de Fleurs",
-      image: "/miel_fleurs.jpg",
-      price: 45.00,
-      sizes: ["250g", "500g", "1000g"],
-      defaultSize: "500g"
-    }
-  ];
 
   const [selectedSizes, setSelectedSizes] = useState(
     products.reduce((acc, product) => {
@@ -78,9 +78,8 @@ export default function HoneyWebsite() {
     }
   };
 
-  // Initialize filtered products
   React.useEffect(() => {
-    setFilteredProducts(products);
+    // Initial load logic here if needed
   }, []);
 
   const handleAddToCart = (product) => {
