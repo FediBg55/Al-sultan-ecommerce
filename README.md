@@ -1,70 +1,191 @@
-# Getting Started with Create React App
+# 🍯 Alsutan - Premium Tunisian Honey E-commerce
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Modern e-commerce website for **Alsutan** honey products featuring shopping cart, product filtering, checkout flow, and responsive design. Built with React, Tailwind CSS, and Lucide icons.
 
-## Available Scripts
+![Alsutan Logo](public/logo_white.png)
+
+## 🌟 Features
+
+- **🛒 Shopping Cart System**
+  - Add/remove products with size selection
+  - Real-time cart updates
+  - Quantity management
+  - Cart total calculation with free shipping threshold
+
+- **🔍 Product Search & Filter**
+  - Live search functionality
+  - Product filtering by name
+  - Category navigation
+
+- **📦 Product Catalog**
+  - Multiple product sizes (220g, 360g, 750g, etc.)
+  - Dynamic pricing
+  - High-quality product images
+  - Hover effects and animations
+
+- **✅ Checkout Flow**
+  - Two-step checkout process
+  - Customer information form
+  - Delivery address collection
+  - Order notes and special instructions
+
+- **📱 Responsive Design**
+  - Mobile-first approach
+  - Tablet and desktop optimized
+  - Smooth animations and transitions
+  - Modern UI/UX
+
+- **🎨 Premium Design**
+  - Custom color scheme (#4a3728 brown, amber accents)
+  - Glassmorphism effects
+  - Smooth micro-interactions
+  - Professional typography
+
+## 🚀 Tech Stack
+
+- **Frontend Framework:** React 19.2.3
+- **Styling:** Tailwind CSS 3.4.19
+- **Icons:** Lucide React 0.562.0
+- **Build Tool:** React Scripts 5.0.1
+- **Language:** JavaScript (ES6+)
+
+## 📋 Prerequisites
+
+Before you begin, ensure you have the following installed:
+- [Node.js](https://nodejs.org/) (v14 or higher)
+- [npm](https://www.npmjs.com/) (comes with Node.js)
+
+## 🛠️ Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/FediBg55/Al-sultan-ecommerce.git
+   cd Al-sultan-ecommerce
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**
+   ```bash
+   npm start
+   ```
+
+4. **Open your browser**
+   Navigate to [http://localhost:3000](http://localhost:3000)
+
+## 📦 Available Scripts
 
 In the project directory, you can run:
 
 ### `npm start`
-
-Runs the app in the development mode.\
+Runs the app in development mode.  
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
 ### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Launches the test runner in interactive watch mode.
 
 ### `npm run build`
-
-Builds the app for production to the `build` folder.\
+Builds the app for production to the `build` folder.  
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
 ### `npm run eject`
-
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🗂️ Project Structure
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+alsultan/
+├── public/
+│   ├── logo_white.png
+│   ├── hero_final.jpg
+│   ├── zfir_royal.jpg
+│   └── miel_fleurs.jpg
+├── src/
+│   ├── App.js          # Main application component
+│   ├── index.css       # Global styles with Tailwind
+│   └── index.js        # Application entry point
+├── package.json
+├── tailwind.config.js
+└── README.md
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🎯 Key Components
 
-## Learn More
+### Product Management
+- Dynamic product catalog with size variants
+- Size selection system
+- Price calculation based on selected size
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Shopping Cart
+- Slide-out cart drawer
+- Real-time cart updates
+- Quantity increment/decrement
+- Item removal functionality
+- Free shipping threshold indicator (200 DT)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Checkout System
+- Customer information form
+- Delivery address collection
+- Order confirmation
+- Form validation
 
-### Code Splitting
+## 🎨 Design System
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Colors
+- **Primary Brown:** `#4a3728`
+- **Secondary Beige:** `#c9a882`
+- **Accent Amber:** Tailwind's amber-500/600
+- **Background:** White and gray-50
 
-### Analyzing the Bundle Size
+### Typography
+- System fonts with fallbacks
+- Responsive font sizes
+- Bold headings with proper hierarchy
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🌐 Browser Support
 
-### Making a Progressive Web App
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 📱 Responsive Breakpoints
 
-### Advanced Configuration
+- **Mobile:** < 768px
+- **Tablet:** 768px - 1024px
+- **Desktop:** > 1024px
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 🔮 Future Enhancements
 
-### Deployment
+- [ ] Backend integration for order processing
+- [ ] User authentication and accounts
+- [ ] Payment gateway integration
+- [ ] Product reviews and ratings
+- [ ] Wishlist functionality
+- [ ] Order tracking system
+- [ ] Multi-language support (French/Arabic)
+- [ ] Admin dashboard
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 👨‍💻 Author
 
-### `npm run build` fails to minify
+**Alsutan Team**  
+Authentic Tunisian Honey since 1998
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📄 License
+
+This project is proprietary and confidential.
+
+## 🙏 Acknowledgments
+
+- Product images from Unsplash
+- Icons by Lucide React
+- Built with React and Tailwind CSS
+
+---
+
+**Made with ❤️ for authentic Tunisian honey lovers**
+
+*For support or inquiries: contact@alsutan.tn*
